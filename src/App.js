@@ -96,12 +96,13 @@ class App extends React.Component {
        <div className="header">
          <h1>To-Do List</h1>
          <TodoForm addItem={this.addItem} />
+         </div>
          <TodoList 
            toDoList={this.state.toDo}
            toggleItem={this.toggleItem}
            clearFinished={this.clearFinished}
          />
-       </div>
+ 
         
       </div>
     )
