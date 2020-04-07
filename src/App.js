@@ -65,7 +65,7 @@ class App extends React.Component {
     //when we find the item we clicked, toggle the finished field
     // otherwise return the item untouched
     this.setState({
-      toDo: this.state.toDoList.map(item=> {
+      toDo: this.state.toDo.map(item=> {
         if (itemId === item.id){
           return {
             ...item,
