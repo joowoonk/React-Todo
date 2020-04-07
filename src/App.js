@@ -83,7 +83,7 @@ class App extends React.Component {
   clearFinished = e => {
     e.preventDefault();
     this.setState({
-      toDo: this.state.toDoList.filter(item => !item.finished)
+      toDo: this.state.toDo.filter(item => !item.finished)
     });
   };
 
