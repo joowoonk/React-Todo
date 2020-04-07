@@ -1,5 +1,6 @@
 import React from 'react';
 import TodoList from './components/TodoList'
+import TodoForm from './components/TodoForm'
 
 import './App.css'
 
@@ -57,7 +58,7 @@ class App extends React.Component {
       finished: false
     };
     this.setState({
-      toDo : [...this.state.toDoList, newToDo]
+      toDo : [...this.state.toDo, newToDo]
     });
   };
 
@@ -94,6 +95,7 @@ class App extends React.Component {
       <div className="App">
        <div className="header">
          <h1>To-Do List</h1>
+         <TodoForm addItem={this.addItem} />
          <TodoList 
            toDoList={this.state.toDo}
            toggleItem={this.toggleItem}
