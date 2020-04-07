@@ -2,7 +2,7 @@ import React from 'react'
 
 import './Todo.css'
 
-const Item = props => {
+const Todo = props => {
     console.log("item",props)
     return (
         <div 
@@ -15,4 +15,4 @@ const Item = props => {
     )
 }
 
-export default Item
+export default Todo

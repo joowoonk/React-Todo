@@ -4,10 +4,12 @@ import React from 'react'
 
 import Todo from './Todo'
 
+import './Todo.css'
+
 const TodoList = props => {
     console.log(props)
     return (
-        <div>
+        <div className="todo-list">
             {props.toDoList.map(item => (
                 <Todo 
                 key={item.id} item={item} 
@@ -15,8 +17,11 @@ const TodoList = props => {
 
                 />
             ))}
-            <button className='clear-btn' onClick={props.clearTodoList} >
-                Clear ToDo-List
+            <button 
+            className='clear-btn' 
+            onClick={props.clearTodoList} 
+            >
+            Clear ToDo-List
             </button>
         </div>
     )

@@ -1,6 +1,8 @@
 import React from 'react';
 import TodoList from './components/TodoList'
 
+import './App.css'
+
 const toDoList = [
   {
     what: "Code 2 hours besides school",
